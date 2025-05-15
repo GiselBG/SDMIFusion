@@ -29,10 +29,7 @@ class Fusion_dataset(Dataset):
         super(Fusion_dataset, self).__init__()
         assert split in ['train', 'val', 'test'], 'split must be "train"|"val"|"test"'        
         if split == 'train':
-            #dataset= "/home/msiau/data/tmp/gbastidas/"
-            #data_dir_vis = dataset+'./MSRS/Visible/train/MSRS/'
-            #data_dir_ir = dataset+ './MSRS/Infrared/train/MSRS/'
-            #data_dir_label = dataset+'./MSRS/Label/train/MSRS/'
+            
             self.filepath_vis, self.filenames_vis = prepare_data_path(vi_path)
             self.filepath_ir, self.filenames_ir = prepare_data_path(ir_path)
             self.filepath_label, self.filenames_label = prepare_data_path(lb_path)

@@ -182,6 +182,7 @@ class Fusionloss(nn.Module):
         loss_ssim= 1 - ssim(x_in_max, generate_img)
         loss_total = loss_in + 10 * loss_grad +  10 *color_loss  + loss_ssim
         
+        
         return loss_total,loss_in,loss_grad, color_loss, loss_ssim
     
 class Sobelxy(nn.Module):
