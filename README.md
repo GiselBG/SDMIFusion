@@ -48,7 +48,7 @@ The test script performs the multimodal fusion process by combining the infrared
 To run inference with the trained SDMIFusion model, use the following command:
 
 ```bash
-python ./test.py --fusion_model_path './fusion_model.pth' --ir_dir './Infrared' --vi_dir './Visible' --segmentation_save_dir './SegmentationResults'
+python ./test.py --model_path './Models' --fusion_model_path './fusion_model.pth' --ir_dir './Infrared' --vi_dir './Visible' --lb_dir './Label' --segmentation_save_dir './SegmentationResults'
 ```
 
 ### Acknowledgments
